@@ -135,6 +135,8 @@ Después vemos como podemos acceder a travis con nuestra cuenta de github, en mi
 
 ![acceso travis](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema2/img/travis2.PNG)
 
-Lo que hacemos ahora es añadir un nuevo repositorio a travis, este repositorio es el del proyecto de CC del master de ingeniería informática de la UGR.
+Además vemos añadido el repositorio usado en convocatorias anteriores de la asignatura.
+
+Lo que hacemos ahora es añadir un nuevo repositorio a travis, este repositorio es el del proyecto de CC del master de ingeniería informática de la UGR. La carpeta se llama ProyectoCC.
 
 ![acceso travis](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema2/img/travis3.PNG)
