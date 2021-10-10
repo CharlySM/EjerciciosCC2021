@@ -48,21 +48,21 @@ Instalamos la versión mayor existente estable.
 rbenv install 2.7.2
 ```
 
-![Instalation version 2.7.2](https://github.com/CharlySM/Ejericios_CC-20-21/blob/main/Desarrollo%20basado%20en%20pruebas/img/installingRuby-2.7.2.PNG)
+![Instalation version 2.7.2](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema2/img/installingRuby-2.7.2.PNG)
 
 Como no existe versión 4.x de ruby instalamos la versión minor mas actual de 2.7.x, en este caso es la versión 2.7.0.
 ```
 rbenv install 2.7.0
 ```
 
-![Instalation version 2.7.0](https://github.com/CharlySM/Ejericios_CC-20-21/blob/main/Desarrollo%20basado%20en%20pruebas/img/installingRuby-2.7.0.PNG)
+![Instalation version 2.7.0](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema2/img/installingRuby-2.7.0.PNG)
 
 Como no hay versión 0.11 vamos a instalar la versión 2.7.1 que es una versión impar.
 
 ```
 rbenv install 2.7.1
 ```
-![Instalation version 2.7.1](https://github.com/CharlySM/Ejericios_CC-20-21/blob/main/Desarrollo%20basado%20en%20pruebas/img/installingRuby-2.7.1.PNG)
+![Instalation version 2.7.1](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema2/img/installingRuby-2.7.1.PNG)
 
 ## Ejercicio 2. Crear una descripción del módulo usando package.json. En caso de que se trate de otro lenguaje, usar el método correspondiente.
 
@@ -94,7 +94,7 @@ Siendo name el nombre del fichero.
 
 En este caso el Gemfile generado es el siguiente.
 
-![Gemfile](https://github.com/CharlySM/Ejericios_CC-20-21/blob/main/Desarrollo%20basado%20en%20pruebas/img/Gemfile.PNG)
+![Gemfile](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema2/img/Gemfile.PNG)
 
 Enlace al repositorio del Gemfile [aqui](https://github.com/CharlySM/Ejercicio-Ruby).
 
@@ -120,7 +120,7 @@ sudo apt-get install sbt
 ```
 
 Después se compila el proyecto spray-test y se lanzan los tests.
-![ejecucion tests](https://github.com/CharlySM/Ejericios_CC-20-21/blob/main/Desarrollo%20basado%20en%20pruebas/img/testSpray.PNG)
+![ejecucion tests](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema2/img/testSpray.PNG)
 
 ## Ejercicio 4. Para la aplicación que se está haciendo, escribir una serie de aserciones y probar que efectivamente no fallan. Añadir tests para una nueva funcionalidad, probar que falla y escribir el código para que no lo haga. A continuación, ejecutarlos desde mocha (u otro módulo de test de alto nivel), usando descripciones del test y del grupo de test de forma correcta. Si hasta ahora no has subido el código que has venido realizando a GitHub, es el momento de hacerlo, porque lo vamos a necesitar un poco más adelante.
 
@@ -129,12 +129,12 @@ Después se compila el proyecto spray-test y se lanzan los tests.
 
 Primero vamos a la página de travis nos logueamos con nuestra cuenta de github y aceptamos lo que nos pide travis para poder usarlo.
 
-![autorizacion travis](https://github.com/CharlySM/Ejericios_CC-20-21/blob/main/Desarrollo%20basado%20en%20pruebas/img/travis1.PNG)
+![autorizacion travis](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema2/img/travis1.PNG)
 
 Después vemos como podemos acceder a travis con nuestra cuenta de github, en mi caso ya tenia acceso ya que en la asignatura de IV del grado de informática se uso travis con esta misma cuenta, en la imagen siguiente se puede ver un ejemplo de test pasado con travis para el proyecto de la asignatura IV, del grado de informática de la UGR.
 
-![acceso travis](https://github.com/CharlySM/Ejericios_CC-20-21/blob/main/Desarrollo%20basado%20en%20pruebas/img/travis2.PNG)
+![acceso travis](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema2/img/travis2.PNG)
 
 Lo que hacemos ahora es añadir un nuevo repositorio a travis, este repositorio es el del proyecto de CC del master de ingeniería informática de la UGR.
 
-![acceso travis](https://github.com/CharlySM/Ejericios_CC-20-21/blob/main/Desarrollo%20basado%20en%20pruebas/img/travis3.PNG)
+![acceso travis](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema2/img/travis3.PNG)
