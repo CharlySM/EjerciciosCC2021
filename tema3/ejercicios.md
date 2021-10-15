@@ -13,7 +13,7 @@ Después para la realización del ejercicio se ha ejecutado el comando:
 sudo docker run --rm jjmerelo/docker-daleksay -f smiling-octopus Uso argumentos, ea
 ```
 Donde se ha producido la siguiente ejecución:
-![ejecución ejercicio 1](https://github.com/CharlySM/EjerciciosCC2021/tree/main/tema3/img/ejercicio1a.PNG)
+![ejecución ejercicio 1](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema3/img/ejercicio1a.PNG)
 
 Podemos observar que comprueba primero si la imagen existe, pero como en este caso no existía se ha descargado la imagen en la ultima versión.
 
@@ -42,11 +42,11 @@ docker run --rm centos_ejer2
 
  A continuación podemos ver una ejecución de las imágenes creadas.
 
- ![ejecución ejercicio 2](https://github.com/CharlySM/EjerciciosCC2021/tree/main/tema3/img/ejecucionEjer2.PNG)
+ ![ejecución ejercicio 2](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema3/img/ejecucionEjer2.PNG)
 
  Mostramos la imagenes para poder comprobar lo que ocupa en disco.
 
- ![imagenes ejercicio 2](https://github.com/CharlySM/EjerciciosCC2021/tree/main/tema3/img/imagenes.PNG)
+ ![imagenes ejercicio 2](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema3/img/imagenes.PNG)
 
 Podemos ver que la imagen que menos ocupa es la imagen de alpine, después la que menos ocupa es la de centos y por último la que más ocupa es la de fedora.
 
@@ -70,7 +70,7 @@ sudo docker images
 
 A continuación mostramos la ejecución de los comandos.
 
-![ejercicio 3](https://github.com/CharlySM/EjerciciosCC2021/tree/main/tema3/img/ejercicio3.PNG)
+![ejercicio 3](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema3/img/ejercicio3.PNG)
 
 ## Ejercicio 4. Examinar la estructura de capas que se forma al crear imágenes nuevas a partir de contenedores que se hayan estado ejecutando.
  Para este ejercicio vamos a usar la herramienta jq, primero la instalamos con el comando.
@@ -87,9 +87,9 @@ sudo cat /var/lib/docker/image/overlay2/imagedb/content/sha256/f14ead945662cf6e6
 
 Cuando ejecutamos obtenemos la siguiente imagen.
 
-![ejercicio 4](https://github.com/CharlySM/EjerciciosCC2021/tree/main/tema3/img/ejer4a.PNG)
-![ejercicio 4](https://github.com/CharlySM/EjerciciosCC2021/tree/main/tema3/img/ejer4b.PNG)
-![ejercicio 4](https://github.com/CharlySM/EjerciciosCC2021/tree/main/tema3/img/ejer4c.PNG)
+![ejercicio 4](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema3/img/ejer4a.PNG)
+![ejercicio 4](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema3/img/ejer4b.PNG)
+![ejercicio 4](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema3/img/ejer4c.PNG)
 
 De estas imágenes la parte que nos interesa esta en la última imagen donde la parte señalada es la estructura por capas formada.
 
@@ -110,8 +110,8 @@ sudo docker run --mount source=ejer5,destination=/prueba alpine_ejer5
 
 En las siguientes imágenes vemos como ha ido todo bien a la hora de ejecutar.
 
-![ejercicio 5](https://github.com/CharlySM/EjerciciosCC2021/tree/main/tema3/img/ejer5a.PNG)
-![ejercicio 5](https://github.com/CharlySM/EjerciciosCC2021/tree/main/tema3/img/ejer5b.PNG)
+![ejercicio 5](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema3/img/ejer5a.PNG)
+![ejercicio 5](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema3/img/ejer5b.PNG)
 
 ## Ejercicio 6. Usar un miniframework REST para crear un servicio web y introducirlo en un contenedor, y componerlo con un cliente REST que sea el que finalmente se ejecuta y sirve como "frontend".
 
@@ -141,8 +141,9 @@ ruby app.rb
 
 Ahora mostramos una imagen del funcionamiento de nuestra conexión entre la api de R y la api de frontend de ruby sinatra.
 
-![ejercicio 6](https://github.com/CharlySM/EjerciciosCC2021/tree/main/tema3/img/ejer6a.PNG)
+![ejercicio 6](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema3/img/ejer6a.PNG)
 
+Esta conexión de api en R con api ruby sinatra se quiere hacer en el proyecto de la asignatura.
 
 ## Ejercicio 7. Reproducir los contenedores creados anteriormente usando un Dockerfile.
 
