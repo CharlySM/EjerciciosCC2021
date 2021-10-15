@@ -42,7 +42,7 @@ docker run --rm centos_ejer2
 
  A continuación podemos ver una ejecución de las imágenes creadas.
 
- ![ejecución ejercicio 2](https://github.com/CharlySM/EjerciciosCC2021/tree/main/tema3/img/ejecucionEjer2.PNG)
+ ![ejecución ejercicio 2](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema3/img/ejecucionEjer2.png)
 
  Mostramos la imagenes para poder comprobar lo que ocupa en disco.
 
