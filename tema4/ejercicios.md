@@ -39,4 +39,4 @@ Para obtener el enlace del badge solo debemos pulsar en el badge build/passing q
 
 Resultado de etiqueta en README:
 
-![badge readme](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema4/img/badgeReadme.png)
+![badge readme]()
