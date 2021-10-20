@@ -16,11 +16,11 @@ Además vemos añadido el repositorio usado en convocatorias anteriores de la as
 
 La configuracion del fichero para la ejecución en travis de los test se ha hecho de la siguiente forma:
 
-![configuracion travis](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema4/img/configTravis.PNG)
+![configuracion travis](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema4/img/configTravis.png)
 
 Para la ejecución se lanza el comando rake que ejecuta el fichero Rakefile que contiene el siguiente contenido el fichero [Rakefile](https://github.com/CharlySM/ejercicioCI/blob/main/Rakefile).
 
-![configuracion rakefile](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema4/img/rakefile.PNG)
+![configuracion rakefile](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema4/img/rakefile.png)
 
 Ahora vemos una configuración desde el repo en travis.
 
@@ -29,14 +29,14 @@ Ahora vemos una configuración desde el repo en travis.
 
 Vamos a mostrar en una imagen la ejecución de los test del repositorio elegido que se puede ver [aquí](https://github.com/CharlySM/ejercicioCI)
 
-![ejecucion](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema4/img/ejecucion.PNG)
+![ejecucion](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema4/img/ejecucion.png)
 
 También se puede añadir el badge en el README del proyecto para de un simple vistazo saber si ha fallado o ha pasado con exito los test realizados a través de travis. Y en caso de fallo poder pinchar y te lleva a travis para ver el log.
 
 Para obtener el enlace del badge solo debemos pulsar en el badge build/passing que aparece en el estado del proyecto en travis y seleccionamos el formato que queramos, en nuestro caso Markdown.
 
-![badge](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema4/img/badge.PNG)
+![badge](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema4/img/badge.png)
 
 Resultado de etiqueta en README:
 
-![badge readme](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema4/img/badgeReadme.PNG)
+![badge readme](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema4/img/badgeReadme.png)
