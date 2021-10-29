@@ -14,3 +14,19 @@ Comprobamos que funciona desde el navegador.
 ![navegador](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/img/navegador.png)
 
 La api desarrollada se puede ver [aquí](https://github.com/CharlySM/EjerciciosCC2021/tree/main/tema5/src/ejer1).
+
+## Programar un microservicio en express (o el lenguaje y marco elegido) que incluya variables como en el caso anterior.
+
+Para este ejercicio vamos a autilizar la aplicación usada en el ejercicio anterior. Como ya tenemos creado una petición GET vamos a mantener esta petición y vamos a crear una nueva con post. Para esta petición vamos a añadir datos a nuestro fichero json del cual leemos datos con el get.
+
+Para mandar la petición post hemos creado un formulario en el fichero index para mandar esta petición donde el único valor que se modifica sera el valor del equipo, el resto de valores se han escondido y añadido de forma aleatoria para ver el funcionamiento de la petición post.
+
+Una vez que hemos ejecutado vemos el resultado de la ejecución.
+
+![est modificada](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/img/estructuraModificada.png)
+
+La nueva ruta se ha añadido en el fichero [index.rb.](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/src/ejer1/index.rb)
+
+Formulario de añadido del ejercicio 2.
+
+![est modificada](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/img/formEjer2.png)

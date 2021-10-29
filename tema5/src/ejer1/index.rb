@@ -15,9 +15,20 @@ def getJson(file)
    return map
  end
 
+ def addString(route, string)
+   open(route, 'a') do |f|
+     f << string
+   end
+ end
+
 get '/' do
   aux=getJson("./estructura.json")
-  puts aux
   @data=aux
+  erb :index
+end
+
+post '/added' do
+  string="{#{params[:equipo]}:{\"ganados\":#{params[:ganados]},\"empatados\":#{params[:empatados]},\"perdidos\":#{params[:perdidos]}}}"
+  addString("./estructura.json",string)
   erb :index
 end
