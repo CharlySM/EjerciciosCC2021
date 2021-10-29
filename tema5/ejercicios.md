@@ -26,7 +26,7 @@ Una vez que hemos ejecutado vemos el resultado de la ejecución.
 ![est modificada](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/img/estructuraModificada.png)
 
 La nueva ruta se ha añadido en el fichero [index.rb.](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/src/ejer1/index.rb) Es una petición post llamada added.
- 
+  
 Formulario de añadido del ejercicio 2.
 
 ![est modificada](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/img/formEjer2.png)
