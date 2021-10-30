@@ -1,4 +1,4 @@
-## Ejericio 1. Realizar una aplicación básica que use algún microframework para devolver alguna estructura de datos del modelo que se viene usando en el curso u otra que se desee. La intención de este ejercicio es simplemente que se vea el funcionamiento básico de un microframework, especialmente si es alguno que, como express, tiene un generador de código. Se puede usar, por otro lado, el lenguaje y microframework que se desee.
+## Ejercicio 1. Realizar una aplicación básica que use algún microframework para devolver alguna estructura de datos del modelo que se viene usando en el curso u otra que se desee. La intención de este ejercicio es simplemente que se vea el funcionamiento básico de un microframework, especialmente si es alguno que, como express, tiene un generador de código. Se puede usar, por otro lado, el lenguaje y microframework que se desee.
 Para este ejercicio se va a usar el lenguaje ruby que es el que se usa en la aplicación de la asignatura, para realizar la aplicación básica se va a usar la gema sinatra de ruby. Es uno de los microframework que se pueden usar en ruby tal y como se comenta [aquí](https://www.slant.co/topics/3523/~best-ruby-microframeworks).
 
 En este caso vamos a devolver la estructura de datos que se usa como prueba para el proyecto de la asignatura, esta estructura esta en formato json y viene definida de la siguiente forma como vemos en la siguiente imagen y en el [fichero](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/src/estructura.json).
@@ -15,7 +15,7 @@ Comprobamos que funciona desde el navegador.
 
 La api desarrollada se puede ver [aquí](https://github.com/CharlySM/EjerciciosCC2021/tree/main/tema5/src/ejer1).
 
-## Programar un microservicio en express (o el lenguaje y marco elegido) que incluya variables como en el caso anterior.
+##  Ejercicio 2. Programar un microservicio en express (o el lenguaje y marco elegido) que incluya variables como en el caso anterior.
 
 Para este ejercicio vamos a autilizar la aplicación usada en el ejercicio anterior. Como ya tenemos creado una petición GET vamos a mantener esta petición y vamos a crear una nueva con post. Para esta petición vamos a añadir datos a nuestro fichero json del cual leemos datos con el get.
 
@@ -25,8 +25,18 @@ Una vez que hemos ejecutado vemos el resultado de la ejecución.
 
 ![est modificada](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/img/estructuraModificada.png)
 
-La nueva ruta se ha añadido en el fichero [index.rb.](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/src/ejer1/index.rb) Es una petición post llamada added.
-  
+La nueva ruta se ha añadido en el fichero [index.rb.](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/src/ejer1/index.rb) Es una petición post con ruta ```/added```.
+
 Formulario de añadido del ejercicio 2.
 
 ![est modificada](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/img/formEjer2.png)
+
+## Ejercicio 3. Crear pruebas para las diferentes rutas de la aplicación.
+
+Para pasar las pruebas de las rutas hemos hecho pruebas para la ruta get y post creadas en el ejericio anterior. Para estas pruebas se ha usado la gema **rack-test** de ruby que nos permíte hacer pruebas sobre las rutas creadas.
+
+Para ello hemos creado un fichero de test específico para las pruebas, llamado [Routes_test](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/src/ejer1/test/Routes_test.rb).
+
+Aquí podemos ver una ejecución de las pruebas de las rutas.
+
+![pruebas rutas](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/img/pruebasRutas.png)

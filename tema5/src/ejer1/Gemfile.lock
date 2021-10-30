@@ -1,0 +1,43 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bson (4.12.1)
+    io-console (0.5.9)
+    json (2.6.1)
+    mongo (2.16.0)
+      bson (>= 4.8.2, < 5.0.0)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    power_assert (2.0.1)
+    rack (2.2.3)
+    rack-protection (2.1.0)
+      rack
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
+    rake (13.0.6)
+    ruby2_keywords (0.0.5)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
+    test-unit (3.5.0)
+      power_assert
+    tilt (2.0.10)
+    yard (0.9.26)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  io-console
+  json
+  mongo (= 2.16.0)
+  rack-test (~> 1.1)
+  rake
+  sinatra
+  test-unit
+  yard
+
+BUNDLED WITH
+   2.1.4
