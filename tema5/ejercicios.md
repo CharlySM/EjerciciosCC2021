@@ -54,3 +54,14 @@ Aquí vemos una captura de las ejecuciones de las tareas del gestor.
 ## Ejercicio 5. Usar rake, invoke o la herramienta equivalente en tu lenguaje de programación para programar diferentes tareas que se puedan lanzar fácilmente desde la línea de órdenes un microservicio.
 
 Para este ejercicio vamos a crear dos tareas en el fichero Rakefile, una donde lanzaremos la app desde linea de órdenes y otra que lanzaremos con procman. Usaremos la app que se ha venido usando en estos ejercicios.
+
+Las tareas a lanzar son:
+1. exec: Ejecución de la aplicación con gestor de tareas.
+2. start: Ejecución de la aplicación usando procman.
+3. stop: Parar la aplicación usando procman.
+
+Fichero [Rakefile.](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/src/ejer1/Rakefile)
+
+Imagen ejecución de tareas.
+
+[Ejecución de la tareas.](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/img/runRakefile.png)

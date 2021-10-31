@@ -1,3 +1,11 @@
 task :exec do
   ruby "index.rb"
 end
+
+task :start do
+  sh "procman start --processes app"
+end
+
+task :stop do
+  sh "procman stop --processes app"
+end
