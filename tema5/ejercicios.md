@@ -64,4 +64,4 @@ Fichero [Rakefile.](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5
 
 Imagen ejecución de tareas.
 
-[Ejecución de la tareas.](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/img/runRakefile.png)
+![Ejecución de la tareas.](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/img/runRakefile.png)
