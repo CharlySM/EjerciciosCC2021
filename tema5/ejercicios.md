@@ -40,3 +40,17 @@ Para ello hemos creado un fichero de test específico para las pruebas, llamado 
 Aquí podemos ver una ejecución de las pruebas de las rutas.
 
 ![pruebas rutas](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/img/pruebasRutas.png)
+
+## Ejercicio 4. Experimentar con diferentes gestores de procesos y servidores web front-end para un microservicio que se haya hecho con antelación, por ejemplo en la sección anterior.
+
+Como gestor de procesos para ruby podemos encontrar varios si buscamos en internet. Los visto han sido passenger, foreman y procman, el más fácil de usar y que tiene mas documentación es procman por lo que se ha elegido este gestor.
+
+Este gestor usa un fichero llamado Procfile para configurar sus tareas y hacer lo que se ordene. Para probar nuestro gestor se ha creado un Procfile con dos tareas, una para iniciar nuestra app y otra para parar nuestra app. El fichero Procfile podemos verlos [aquí](https://github.com/CharlySM/EjerciciosCC2021/tree/main/tema5/src/ejer1/Procfile). Para ejecutar una tarea del gestor lo que hacemos es ejecutar el comando ```procman tarea --processes nombreProceso```.
+
+Aquí vemos una captura de las ejecuciones de las tareas del gestor.
+
+![gestor procesos](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/img/gestorProcesos.png)
+
+## Ejercicio 5. Usar rake, invoke o la herramienta equivalente en tu lenguaje de programación para programar diferentes tareas que se puedan lanzar fácilmente desde la línea de órdenes un microservicio.
+
+Para este ejercicio vamos a crear dos tareas en el fichero Rakefile, una donde lanzaremos la app desde linea de órdenes y otra que lanzaremos con procman. Usaremos la app que se ha venido usando en estos ejercicios.
