@@ -1,0 +1,12 @@
+
+process :app do
+   start do
+    pid=spawn("ruby ./index.rb &")
+    system("echo #{pid+2} > pid.txt")
+   end
+
+   stop do
+    system("kill -9 $(cat pid.txt)")
+    system("rm pid.txt")
+   end
+end

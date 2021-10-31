@@ -9,6 +9,7 @@ GEM
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     power_assert (2.0.1)
+    procman (1.9.6)
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
@@ -33,6 +34,7 @@ DEPENDENCIES
   io-console
   json
   mongo (= 2.16.0)
+  procman
   rack-test (~> 1.1)
   rake
   sinatra
