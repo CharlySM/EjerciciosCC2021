@@ -65,3 +65,90 @@ Fichero [Rakefile.](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5
 Imagen ejecución de tareas.
 
 ![Ejecución de la tareas.](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/img/runRakefile.png)
+
+## Ejercicio 6. Instalar etcd3, averiguar qué bibliotecas funcionan bien con el lenguaje que estemos escribiendo el proyecto (u otro lenguaje), y hacer un pequeño ejemplo de almacenamiento y recuperación de una clave; hacer el almacenamiento desde la línea de órdenes (con etcdctl) y la recuperación desde el mini-programa que hagáis.
+
+Para usar la configuración distirbuida se ha usado el servicio etcd. Para usarlo primero se ha tenido que instalar siguiendo [esta](https://computingforgeeks.com/how-to-install-etcd-on-ubuntu-18-04-ubuntu-16-04/) guía.
+
+Una vez instalado verificamos su estado con los comandos.
+
+```
+systemctl status etcd.service
+```
+
+Lanzamos el servicio en el puerto 2379.
+
+```
+ss -tunelp | grep 2379
+```
+
+Coprobamos que se ha lanzado.
+
+```
+etcdctl member list
+```
+ Mostramos la ejecución de los comandos lanzados anteriormente.
+
+ ![salida etcd](./img/salidaEtcd.png)
+
+ Realizamos el export para que funcione correctamente el cliente.
+
+ ```
+ export ETCDCTL_API=3
+ ```
+
+Creamos el puerto y host para nuestra aplicación.
+
+```
+etcdctl put PortApp 3456
+etcdctl put HostApp localhost
+```
+El fichero del programa se encuentra [aquí.](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/src/ejer6/ejer6.rb)
+
+Ejecución del programa.
+
+![ejecucion ejer6](./img/ejer6Ejecucion.png)
+
+## Ejericio 7. Instalar consul, averiguar qué bibliotecas funcionan bien con el lenguaje que estemos escribiendo el proyecto (u otro lenguaje), y hacer un pequeño ejemplo de almacenamiento y recuperación de una clave desde la línea de órdenes.
+
+Para la instalación de consul, podemos seguir las instrucciones de su [página web](https://learn.hashicorp.com/tutorials/consul/get-started-install?in=consul/getting-started)
+
+Una vez instalado verificamos, comprobando la versión, por ejemplo.
+
+![Verificación consul](./img/versionConsul.png)
+
+Una vez verificado, necesitamos ejecutar el agente para poder empezar a trabajar con consul.
+
+```consul agent -dev```
+
+Para detener el agente debemos ejecutar:
+
+```consul leave```
+
+La libreria a usar con el lenguaje de programación usado para el proyecto es [diplomat](https://github.com/WeAreFarmGeek/diplomat).
+
+Como ejemplo, vamos a crear el puerto y el host y lo vamos a recuperar desde una pequeña aplicación en ruby.
+
+Para crear las claves con el puerto y el host ejecutamos lo siguiente:
+
+```
+consul kv put puertoConsul 3456
+
+consul kv put hostConsul localhost
+
+# Para recuperar las claves desde ejecutamos
+
+consul kv get puertoConsul
+
+consul kv get hostConsul
+```
+
+Podemos ver una ejecución de los comandos anteriores a continuación.
+
+![ejecucion consul](./img/consulConsola.png)
+
+Ahora creamos un pequeño programa en ruby para mostrar las claves creadas antes.
+
+El fichero del programa se encuentra [aquí.](https://github.com/CharlySM/EjerciciosCC2021/blob/main/tema5/src/ejer7/ejer7.rb)
+
+![Imagen ejecucion programa](./img/programaConsulRuby.png)
